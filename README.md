@@ -17,13 +17,13 @@ email (expresión regular '^[a-zA-Z0-9]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]
 
   function validarEmail($email){
  
-    return ereg('^[a-zA-Z0-9]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$', $email);
+     return ereg('^[a-zA-Z0-9]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$', $email);
  
   }
 
   function validarPasswords($pass1, $pass2) {
   
-   return $pass1 == $pass2 && strlen($pass1) > 5;
+    return $pass1 == $pass2 && strlen($pass1) > 5;
  
   }
 
